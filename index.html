@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Benjamin Paillard</title>
+</head>
+<body>
+    <header>
+        <div class="brand">
+        <div>
+          <h1>Portfolio Cybersécurité</h1>
+          <p>Étudiant · Cybersécurité · Pentest / SOC / Forensics</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projet">Projet/Labs</a>
+      </nav>
+    </header>
+
+    <section id="about" class="hero">
+
+  <div class="hero-left">
+
+    <h2>Benjamin Paillard</h2>
+
+    <p>Étudiant en cybersécurité, je m’intéresse autant aux techniques offensives qu’aux enjeux défensifs. <br>
+J’aime comprendre comment une attaque fonctionne, comment la détecter et comment y répondre efficacement. <br>
+Je crée des labs, j’exploite des vulnérabilités, j’analyse les traces et je propose des remédiations adaptées.
+Chaque exercice est ensuite documenté dans des write-ups clairs, structurés et reproductibles.</p>
+
+    <div class="actions">
+      <a class="btn-primary" href="#projet">Mes projets</a>
+      <a class="btn-ghost" href="./CVBenjaminPaillard.pdf" target="_blank" rel="noopener">Télécharger CV</a>
+      <a class="btn-primary" href="https://tryhackme.com/p/Benjam1" target="_blank">Profil TryHackMe</a>
+    </div>
+  </div>
+
+  <aside class="hero-right">
+    <div class="card-outline">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <div>
+          <div style="font-size:12px;color:rgba(216,224,234,0.6)">Live Lab Preview</div>
+          <div style="font-weight:700">nmap quick scan</div>
+        </div>
+        <div style="font-family:JetBrains Mono,monospace;font-size:12px;color:rgba(216,224,234,0.6)"># lab</div>
+      </div>
+
+      <div class="terminal">
+        <pre class="terminaltext">root@lab:~# nmap -sV -p- alternance
+PORT    STATE     SERVICE                  VERSION
+22/tcp  blocked   Bachelor cybersécurité      3
+80/tcp  open      Monté en compétence         ?🛫
+443/tcp filtered  Motivation                illimitée
+
+# exploit -> CVE-2026-TryHarder-Mode-Activated</pre>
+      </div>
+
+      <div class="terminalfadebar">
+        <span></span>
+      </div>
+    </div>
+  </aside>
+
+</section>
+
+<section id="certifications" class="certifications">
+  <h2>Certifications</h2>
+  <div class="timeline-container">
+
+    <div class="timeline-line"></div>
+
+    <div class="timeline-point completed" style="--pos:0%">
+      <div class="timeline-box top">
+        <strong>eJPT v2</strong><br>
+        1 Septembre 2025<br>
+        Pentest (énumération, exploitation…)
+      </div>
+    </div>
+
+    <div class="timeline-point completed" style="--pos:40%">
+      <div class="timeline-box bottom">
+        <strong>eCIR</strong><br>
+        10 Novembre 2025<br>
+        Réponse à incident (logs, détection…)
+      </div>
+    </div>
+
+    <div class="timeline-point in-progress" style="--pos:65%">
+      <div class="timeline-box top">
+        <strong>Préparation ⚡</strong><br>
+        Eentraînement intensif avant la prochaine certification
+      </div>
+      <span class="ping"></span>
+    </div>
+
+    <div class="timeline-point upcoming" style="--pos:90%">
+  <div class="timeline-box bottom">
+    <strong>C'est un secret 🤫</strong><br>
+    2026<br>
+    
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+<section id="skills" class="skills">
+  <h2>Compétences</h2>
+  <div class="skill-grid">
+    <div class="skill-card">
+      <h3>Pentest</h3>
+      <ul>
+        <li>Enum & Recon</li>
+        <li>Web attacks</li>
+        <li>PrivEsc</li>
+        <li>BurpSuite, Nmap</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Blue Team / Detection</h3>
+      <ul>
+        <li>SIEM (Wazuh, ELK)</li>
+        <li>Logs & Alerts</li>
+        <li>Threat Intelligence</li>
+        <li>Sysmon & Monitoring</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Systèmes & Réseau</h3>
+      <ul>
+        <li>Linux & Windows</li>
+        <li>Active Directory</li>
+        <li>TCP/IP & Networking</li>
+        <li>Virtualisation / Labs</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Outils & Softskills</h3>
+      <ul>
+        <li>Powershell / Bash Scripts</li>
+        <li>Rédaction de rapports techniques</li>
+        <li>Analyse & résolution de problèmes</li>
+        <li>Curieux & motivé</li>
+        <li>Apprentissage autonome</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="projet" class="projets">
+  <h2>Projets/Labs</h2>
+  <div class="plcard">
+    <div class="card">
+      <a href="https://benjaminpaillard.notion.site/Benjamin-Paillard-Labs-CTF-2ac331d3fa3b80f88af0c75510232ad8" target="_blank">WriteUp 🔗</a>
+    <p>Section en cours de construction <br> <br>
+Je suis actuellement en train de rédiger plusieurs write‑ups basés sur des challenges CTF TryHackMe. <br> <br>
+L’objectif est de documenter les techniques d’énumération, d’exploitation et d’escalade de privilèges, avec un format clair et reproductible.
+Les premiers contenus seront publiés prochainement.</p></div>
+    <div class="card">
+      <a href="https://benjaminpaillard.notion.site/Benjamin-Paillard-Labs-CTF-2ac331d3fa3b80f88af0c75510232ad8" target="_blank">Attaque & Détection</a>
+      <p>Projet en cours de développement <br>
+Je construis un lab entièrement dédié à la simulation d’attaques (Red Team) et à leur détection (Blue Team).
+<br>
+<br>
+Le projet inclura : <br>
+
+- La création d’une infrastructure vulnérable,
+<br>
+- L’exécution d’attaques contrôlées,
+<br>
+- La configuration d’outils de détection (Wazuh / ELK / Sysmon),
+<br>
+- L’analyse des logs et la génération d’alertes.
+<br>
+<br>
+Une série de comptes‑rendus détaillés sera ajoutée dès que les premières détections seront opérationnelles.</p>
+    </div>
+    <div class="card">
+      <a href="https://benjaminpaillard.notion.site/Benjamin-Paillard-Labs-CTF-2ac331d3fa3b80f88af0c75510232ad8" target="_blank">Architecture Sécurisée d’Entreprise</a>
+      <p>Projet en cours de construction <br><br>
+Conception et déploiement d’une infrastructure Windows/Linux complète : AD, segmentation réseau, bastion, durcissement et GPO. <br>Supervision centralisée via SIEM (Wazuh/ELK) et analyse des logs pour assurer la sécurité globale.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h1>benjaminpaillard.pro@gmail.com</h1>
+</section>
+
+
+</body>
+</html>
